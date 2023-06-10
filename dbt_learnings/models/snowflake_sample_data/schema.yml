@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: snowflake_employee_data
+    description : 'Employee table data from snowflake'
+    database: WORKFALL_DB  
+    schema: PUBLIC  
+    tables:
+      - name: employee
+        description : 'Details about the football employees.'
