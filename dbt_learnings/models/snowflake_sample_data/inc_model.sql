@@ -1,6 +1,6 @@
 {{
     config(
-        materialized='incremental'
+        materialized='view'
     )
 }}
 with snowflake_employee_data as (
@@ -9,8 +9,7 @@ with snowflake_employee_data as (
 
 final as (
     select * 
-    from snowflake_employee_data where date_column  = '2023-07-06'
-)
+    from snowflake_employee_data)
 
 select * from final
 
