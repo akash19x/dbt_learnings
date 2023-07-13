@@ -8,3 +8,7 @@ sources:
     tables:
       - name: employee
         description : 'Details about the football employees.'
+        freshness :
+          warn_after:
+            count : 1
+            period : day
